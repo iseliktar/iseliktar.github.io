@@ -4,3 +4,4 @@
 
 layout: home
 ---
+This is the site of {{ site.title }}
