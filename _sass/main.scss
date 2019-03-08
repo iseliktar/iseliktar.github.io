@@ -67,6 +67,7 @@ body {
     &:focus {
       border: none;
       outline: none;
+      border-radius: 0;
     }
   }
 }
