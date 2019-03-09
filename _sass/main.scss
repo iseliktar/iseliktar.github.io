@@ -501,11 +501,11 @@ body {
   .container {
     max-width: 420px;
   }
-  .nav {
+  .default .nav {
     padding: 175px 0 35px;
   }
   .main-nav {
-    .navbar-collapse {
+    .navbar-collapse.default {
       position: absolute;
       top: 0;
       z-index: 3;
@@ -569,12 +569,12 @@ body {
   }
   .what-is-spodari {
     background: url("../images/white-bg.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 0;
     margin-top: -170px;
-    padding: 80px 15px 0;
+    padding: 135px 15px 0;
     position: relative;
-    max-width: 330px;
+    max-width: 90%;
   }
   .statistics {
     .money {
