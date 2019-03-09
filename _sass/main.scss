@@ -26,6 +26,10 @@ body {
   max-width: 100%;
 }
 
+.overflowWrap {
+  overflow: hidden;
+}
+
 .main-nav {
   padding: 0;
   a {
