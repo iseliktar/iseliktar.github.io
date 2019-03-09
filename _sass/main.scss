@@ -162,6 +162,32 @@ body {
   }
 }
 
+.what-is-next {
+  width: 375px;
+  .section-content {
+    background: url("../images/orange-text-bg-top.png"), url("../images/orange-text-bg.png");
+    background-position: top center, 50% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 90%, 90%;
+    padding: 20px 0 80px;
+  }
+  img {
+    width: 100%;
+  }
+  .event-info {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  p {
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+  }
+  .event-name {
+    font-weight: bold;
+  }
+}
+
 .statistics {
   max-width: 1000px;
   .icon-container {
