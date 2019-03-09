@@ -475,15 +475,18 @@ body {
     max-width: 420px;
   }
   .nav {
-    padding-top: 175px;
+    padding: 175px 0 35px;
   }
   .main-nav {
     .navbar-collapse {
       position: absolute;
       top: 0;
       z-index: 3;
-      background: #FF5100;
       transition: left 0.35s ease;
+      background: url("../images/menu-orange-bg.png");
+      background-position: left bottom;
+      background-size: cover;
+
       &.collapse {
         left: 100%;
         display: block;
@@ -500,6 +503,9 @@ body {
       }
       li {
         width: 100%;
+        &.facebook-icon {
+          display: none;
+        }
         a {
           color: #fff;
           font-size: 25px;
