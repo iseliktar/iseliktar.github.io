@@ -329,10 +329,9 @@ body {
           }
         }
         .dot {
-          height: 16px;
-          width: 16px;
-          border-radius: 8px;
-          margin-right: -8px;
+          height: 22px;
+          width: 22px;
+          margin-right: -12px;
           margin-top: -8px;
         }
       }
@@ -390,12 +389,11 @@ body {
       }
     }
     .dot {
-      height: 20px;
-      width: 20px;
+      height: 26px;
+      width: 26px;
       margin: 0 auto;
-      border: 3px dashed #FF5100;
-      border-radius: 13px;
-      background: #FFF;
+      background: url("../images/future-event.png") no-repeat center center;
+      background-size: contain;
     }
   }
 }
@@ -451,6 +449,8 @@ body {
     line-height: 52px;
     color: #FF5100;
     font-weight: bold;
+    display: block;
+    text-align: center;
     &:hover {
       text-decoration: none;
     }
@@ -465,8 +465,9 @@ body {
   }
   .follow-us {
     margin-bottom: 65px;
-    display: block;
-    text-align: center;
+  }
+  .write-to-us {
+    margin-bottom: 35px;
   }
 }
 
@@ -565,6 +566,14 @@ body {
         bottom: -23px;
       }
     }
+  }
+  .what-is-spodari {
+    background: url("../images/white-bg.png") no-repeat;
+    background-size: contain;
+    background-position: 50% 0;
+    margin-top: -170px;
+    padding-top: 80px;
+    position: relative;
   }
   .statistics {
     .money {
