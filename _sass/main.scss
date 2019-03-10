@@ -581,6 +581,13 @@ body {
   }
 }
 
+.future-event {
+  .event-description {
+    margin-top: 64px;
+    text-align: center;
+  }
+}
+
 .footer {
   height: 260px;
   background: url("../images/hash.png") no-repeat;
