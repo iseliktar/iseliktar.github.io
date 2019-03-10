@@ -560,6 +560,27 @@ body {
   }
 }
 
+.event-details {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.event-action {
+  margin-top: 64px;
+  a {
+    font-weight: bold;
+    color: #FF5100;
+    font-size: 38px;
+    line-height: 58px;
+    display: inline-block;
+    padding: 17px 40px 11px;
+    border: 3px solid #FF5100;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .footer {
   height: 260px;
   background: url("../images/hash.png") no-repeat;
