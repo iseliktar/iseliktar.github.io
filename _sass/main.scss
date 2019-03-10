@@ -82,6 +82,9 @@ body {
   background: url("../images/team.png") no-repeat 50% 50%;
   background-size: cover;
   position: relative;
+}
+.hero-image,
+.no-hero {
   .logo {
     background: url("../images/logo.png") no-repeat;
     background-size: contain;
@@ -98,7 +101,8 @@ body {
 
 .main-nav-section {
   border-bottom: 1px solid transparent; /* prevents margin collapsing */
-  &.what-is-next {
+  &.what-is-next,
+  &.single-event-info {
     .header-icon {
       background: url("../images/flag.png") no-repeat;
       background-size: contain;
@@ -471,6 +475,91 @@ body {
   }
 }
 
+.single-event-info {
+  .col-md-4 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .icon-container {
+    height: 26px;
+  }
+  .icon {
+    margin: 0 auto 15px;
+  }
+  .location {
+    .icon {
+      height: 26px;
+      width: 18px;
+      background: url("../images/location-pin.png") no-repeat;
+      background-size: contain;
+    }
+  }
+  .date {
+    .icon {
+      width: 20px;
+      height: 18px;
+      background: url("../images/calendar-single-event.png") no-repeat;
+      background-size: contain;
+    }
+  }
+  .contestants-type {
+    .icon {
+      width: 22px;
+      height: 21px;
+      background: url("../images/person.png") no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.event-details.main-nav-section {
+  text-align: center;
+  margin-top: 64px;
+  img {
+    max-height: 576px;
+    max-width: 680px;
+  }
+  .event-description {
+    margin: 64px auto 0;
+    max-width: 560px;
+  }
+  .event-summary {
+    -ms-transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+    transform: skewX(-10deg);
+    max-width: 660px;
+    background: #FF5100;
+    padding: 41px 52px;
+    color: #fff;
+    margin: 25px auto 0;
+    .content {
+      -ms-transform: skewX(10deg);
+      -webkit-transform: skewX(10deg);
+      transform: skewX(10deg);
+    }
+  }
+}
+
+.single-event-gallery {
+  margin-top: 100px;
+  .row {
+    margin-bottom: 30px;
+  }
+  .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  img {
+    max-width: 100%;
+    max-height: 268px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 .footer {
   height: 260px;
   background: url("../images/hash.png") no-repeat;
@@ -542,7 +631,8 @@ body {
       }
     }
   }
-  .hero-image {
+  .hero-image,
+  .no-hero {
     .logo {
       width: 189px;
       height: 143px;
@@ -565,6 +655,12 @@ body {
       &:after {
         bottom: -23px;
       }
+    }
+  }
+  .single-event-info {
+    &.main-nav-section h1 {
+      max-width: 400px;
+      margin: 0 auto 42px;
     }
   }
   .what-is-spodari {
@@ -624,7 +720,8 @@ body {
 }
 
 @media (min-width: 767px) {
-  .hero-image {
+  .hero-image,
+  .no-hero {
     .logo {
       width: 325px;
       height: 244px;
@@ -638,11 +735,22 @@ body {
       left: 36px;
     }
   }
+  .no-hero {
+    .logo {
+      top: 27px;
+    }
+  }
   .main-content {
     background-image: url("../images/background-logo.png"), url("../images/background-hashtag.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 1186px 835px, 509px 940px;
     background-position: top left, 100% 40%;
+  }
+  .main-content.single-event {
+    background-image: url("../images/background-logo.png");
+    background-repeat: no-repeat;
+    background-size: 1186px 835px;
+    background-position: top left;
   }
   .main-nav-section {
     margin-top: 144px;
@@ -654,6 +762,15 @@ body {
         bottom: -35px;
       }
     }
+  }
+  .single-event-info {
+    &.main-nav-section h1 {
+      max-width: 400px;
+      margin: 0 auto 72px;
+    }
+  }
+  .single-event .single-event-info {
+    margin-top: 0;
   }
   .statistics {
     .money {
