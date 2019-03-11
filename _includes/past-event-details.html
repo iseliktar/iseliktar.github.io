@@ -1,6 +1,10 @@
+{% assign file-path-array = page.path | split: "/" %}
+{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
+{% assign file-name = file-path-name-and-extension-array.first %}
+
 <section class="container main-nav-section event-details">
 	<div class="section-content">
-		<img src="./assets/images/past-event-image.jpg" alt="Past event poster">
+		<img src="/assets/images/{{ file-name }}/main-image.jpg" alt="Past event poster">
 		<div class="event-description">
 			{{ content }}
 		</div>

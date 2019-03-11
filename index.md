@@ -1,7 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+first-section-title: 'какво е #spodari'
+second-section-title: какво предстои
+third-section-title: статистика
+fourth-section-title: събития
+fifth-section-title: партньори
+sixth-section-title: контакти
 ---
-This is the site of {{ site.title }}
+Екипът на Tumba Solutions те предизвиква да се движиш и да участваш в благородна кауза, като ти сподарява идеята за тази инициатива. Ние я стартираме тази година по време на Витоша 100 и се надяваме ти да я приемеш и доразвиеш!
+
+Всеки път, когато участваш в спортно събитие и подкрепяш дарителска кауза, използвай хаштага на инициативата #SpoDari, за да могат всички да научават за нея и да я доразвиват.
