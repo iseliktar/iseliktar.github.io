@@ -28,8 +28,8 @@ Properties are:
 * `contestants-type`: [IT Crowd only] *This is the text that appears below / next to the person icon.*
 * `layout`: Could be one of [past-event], [upcoming-event], [future-event]. This defines the template that will be used to render the event and the style it will have in the calendar. Templates for past, upcoming and future event slightly differ in their layout.
 * `event-summary`: This is the text that appears in the orange box below the event description.
-* Below the `---` section, enter the description of the event.
 * `gallery-count`: [8] This is the number of images that you have put in the gallery for this event. How to put the images in the gallery will be explained in the next section.
+* Below the `---` section, enter the description of the event.
 
 ### Event Images
 
@@ -45,21 +45,19 @@ This is the main image of the past and upcoming events that sit right above the 
 
 This is the image of the event that is shown on the Home page. By designs it should be cut at an angle top and bottom. [Specify the angle from designers]. See the Gallery rules for the directory where the image should be put. This should be named `event-poster.png`. This should be a png as it will have transparency?
 
-## Homepage Edits
+## Homepage
 
 Homepage is located in the index.md file in the main directory. It has a couple of properties and content below the `---` section. The content is the text that appears in the `What is #spodari` section.
 
-### Homepage
-
-#### Section Titles and Navigation Items
+### Section Titles and Navigation Items
 
 `first-section-title`... `sixth-section-title` - The properties from the first section title to the sixth are the navigation items which are the same as the section titles.
 
-#### Statistics Metrics
+### Statistics Metrics
 
 `donated-sum-number`, `active-minutes-number`, `events-number` are the numbers that are shown in the `Statistics` section of the Home page.
 
-#### Calendar
+### Calendar
 
 Calendar is generated, based on the events that have been created.
 
