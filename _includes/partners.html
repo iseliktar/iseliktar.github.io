@@ -1,3 +1,4 @@
+{% assign partners = site.partners | sort: 'order' %}
 <section class="container main-nav-section partners" id="partners">
 	<h1>
 		<div class="header-icon"></div>
@@ -5,15 +6,18 @@
 	</h1>
 	<div class="section-content">
 		<div class="row">
-			<div class="col-md-4">
-				<div class="partner-image"></div>
-			</div>
-			<div class="col-md-4">
-				<div class="partner-image"></div>
-			</div>
-			<div class="col-md-4">
-				<div class="partner-image"></div>
-			</div>
+			{% for partner in partners %}
+				{% assign file-path-array = partner.path | split: "/" %}
+				{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
+				{% assign file-name = file-path-name-and-extension-array.first %}
+				<div class="col-md-4">
+					<a href="{{ partner.link-to-site }}" target="_blank">
+						<div class="partner-image">
+							<img src="/assets/images/partners/{{ file-name }}.png" alt="{{ partner-name }}">
+						</div>
+					</a>
+				</div>
+			{% endfor %}
 		</div>
 	</div>
 </section>

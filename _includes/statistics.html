@@ -9,21 +9,21 @@
 				<div class="icon-container">
 					<div class="icon"></div>
 				</div>
-				<div class="numerical numscroller" data-min="1" data-max="10000" data-delay="5" data-increment="80">10 000</div>
+				<div class="numerical numscroller" data-min="1" data-max="{{ page.donated-sum-number }}" data-delay="5" data-increment="{{ page.donated-sum-number | divided_by: 80 }}">{{ page.donated-sum-number }}</div>
 				<div class="asset-name">Дарени левове</div>
 			</div>
 			<div class="col-md-4 minutes">
 				<div class="icon-container">
 					<div class="icon"></div>
 				</div>
-				<div class="numerical numscroller" data-min="1" data-max="2560" data-delay="5" data-increment="30">2560</div>
+				<div class="numerical numscroller" data-min="1" data-max="{{ page.active-minutes-number }}" data-delay="5" data-increment="{{ page.active-minutes-number | divided_by: 80 }}">{{ page.active-minutes-number }}</div>
 				<div class="asset-name">Активни минути</div>
 			</div>
 			<div class="col-md-4 events">
 				<div class="icon-container">
 					<div class="icon"></div>
 				</div>
-				<div class="numerical numscroller" data-min="1" data-max="25" data-delay="5" data-increment="4">25</div>
+				<div class="numerical numscroller" data-min="1" data-max="{{ page.events-number }}" data-delay="5" data-increment="{{ page.events-number | divided_by: 8 }}">{{ page.events-number }}</div>
 				<div class="asset-name">Събития</div>
 			</div>
 		</div>
@@ -34,7 +34,7 @@
 				<div class="icon-container">
 					<div class="icon"></div>
 				</div>
-				<div class="numerical numscroller" data-min="1" data-max="10000" data-delay="5" data-increment="80">10 000</div>
+				<div class="numerical numscroller" data-min="1" data-max="{{ page.donated-sum-number }}" data-delay="5" data-increment="{{ page.donated-sum-number | divided_by: 80 }}">{{ page.donated-sum-number }}</div>
 				<div class="asset-name">Дарени левове</div>
 			</div>
 		</div>
@@ -43,14 +43,14 @@
 				<div class="icon-container">
 					<div class="icon"></div>
 				</div>
-				<div class="numerical numscroller" data-min="1" data-max="2560" data-delay="5" data-increment="30">2560</div>
+				<div class="numerical numscroller" data-min="1" data-max="{{ page.active-minutes-number }}" data-delay="5" data-increment="{{ page.active-minutes-number | divided_by: 80 }}">{{ page.active-minutes-number }}</div>
 				<div class="asset-name">Активни минути</div>
 			</div>
 			<div class="col-6 events">
 				<div class="icon-container">
 					<div class="icon"></div>
 				</div>
-				<div class="numerical numscroller" data-min="1" data-max="25" data-delay="5" data-increment="4">25</div>
+				<div class="numerical numscroller" data-min="1" data-max="{{ page.events-number }}" data-delay="5" data-increment="{{ page.events-number | divided_by: 15 }}">{{ page.events-number }}</div>
 				<div class="asset-name">Събития</div>
 			</div>
 		</div>

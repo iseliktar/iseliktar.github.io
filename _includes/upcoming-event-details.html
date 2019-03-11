@@ -1,16 +1,12 @@
+{% assign file-path-array = page.path | split: "/" %}
+{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
+{% assign file-name = file-path-name-and-extension-array.first %}
+
 <section class="container main-nav-section event-details">
 	<div class="section-content">
-		<img src="./assets/images/past-event-image.jpg" alt="Past event poster">
+		<img src="./assets/images/events/{{ file-name }}/event-poster.jpg" alt="Event poster">
 		<div class="event-description">
-			<p>
-				Екипът на Tumba Solutions те предизвиква да се движиш и да участваш в благородна кауза, като ти сподарява идеята за тази инициатива. Ние я стартираме тази година по време на Витоша 100 и се надяваме ти да я приемеш и доразвиеш!
-			</p>
-			<p>
-				Всеки път, когато участваш в спортно събитие и подкрепяш дарителска кауза, използвай хаштага на инициативата #SpoDari, за да могат всички да научават за нея и да я доразвиват.
-			</p>
-			<p>
-				Екипът на Tumba Solutions те предизвиква да се движиш и да участваш в благородна кауза, като ти сподарява идеята за тази инициатива. Ние я стартираме тази година по време на Витоша 100 и се надяваме ти да я приемеш и доразвиеш!
-			</p>
+			{{ content }}
 		</div>
 		<div class="event-action">
 			<a href="mailto:hello@spodari.org">участвай</a>

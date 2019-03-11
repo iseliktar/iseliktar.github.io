@@ -1,13 +1,13 @@
+{% assign file-path-array = page.path | split: "/" %}
+{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
+{% assign file-name = file-path-name-and-extension-array.first %}
+
 <section class="container main-nav-section single-event-gallery">
 	<div class="section-content">
-		{% assign file-path-array = page.path | split: "/" %}
-		{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
-		{% assign file-name = file-path-name-and-extension-array.first %}
-
 		<div class="row">
 		{% for i in (1..page.gallery-images-count) %}
 			<div class="col-md-3">
-				<img src="/assets/images/{{ file-name }}/gallery-image-{{ i }}.jpg" alt="SpoDari Gallery Image">
+				<img src="/assets/images/events/{{ file-name }}/gallery-image-{{ i }}.jpg" alt="SpoDari Gallery Image">
 			</div>
 		{% endfor %}
 		</div>

@@ -6,6 +6,9 @@ third-section-title: статистика
 fourth-section-title: събития
 fifth-section-title: партньори
 sixth-section-title: контакти
+donated-sum-number: 10000
+active-minutes-number: 2560
+events-number: 25 
 ---
 Екипът на Tumba Solutions те предизвиква да се движиш и да участваш в благородна кауза, като ти сподарява идеята за тази инициатива. Ние я стартираме тази година по време на Витоша 100 и се надяваме ти да я приемеш и доразвиеш!
 
