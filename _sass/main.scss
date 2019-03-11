@@ -411,7 +411,7 @@ body {
     -moz-border-radius: 72px;
     border-radius: 72px;
     background: #D9D9D9;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -768,7 +768,6 @@ body {
       -webkit-border-radius: 52px;
       -moz-border-radius: 52px;
       border-radius: 52px;
-      margin-bottom: 20px;
     }
   }
   .event-details.main-nav-section {
