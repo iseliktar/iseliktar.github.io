@@ -15,7 +15,45 @@
 				<div class="icon-container">
 					<div class="icon"></div>
 				</div>
-				<div class="name">{{ page.event-date }}</div>
+				<div class="name">
+					{% assign m = page.start-date | date: "%-m" %}
+					{{ page.start-date | date: "%-d" }}
+					{% case m %}
+					{% when '1' %}януари
+					{% when '2' %}февруари
+					{% when '3' %}март
+					{% when '4' %}април
+					{% when '5' %}май
+					{% when '6' %}юни
+					{% when '7' %}юли
+					{% when '8' %}август
+					{% when '9' %}септември
+					{% when '10' %}октомври
+					{% when '11' %}ноември
+					{% when '12' %}декември
+					{% endcase %}
+					{{ page.start-date | date: "%Y" }}
+					{% if page.end-date %}
+						<span>-</span>
+						{% assign m = page.end-date | date: "%-m" %}
+						{{ page.end-date | date: "%-d" }}
+						{% case m %}
+						{% when '1' %}януари
+						{% when '2' %}февруари
+						{% when '3' %}март
+						{% when '4' %}април
+						{% when '5' %}май
+						{% when '6' %}юни
+						{% when '7' %}юли
+						{% when '8' %}август
+						{% when '9' %}септември
+						{% when '10' %}октомври
+						{% when '11' %}ноември
+						{% when '12' %}декември
+						{% endcase %}
+						{{ page.end-date | date: "%Y" }}
+					{% endif %}
+				</div>
 			</div>
 			<div class="col-md-4 contestants-type">
 				<div class="icon-container">

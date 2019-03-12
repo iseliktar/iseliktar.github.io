@@ -13,13 +13,13 @@ If you want to have a multiline value of a property, you should use the `|` char
 		and even a third line
 ```
 
+## Section Titles and Navigation Items
+
+`first-section-title`... `sixth-section-title` - The properties from the first section title to the sixth are the navigation items which are the same as the section titles and are configurable from the [_config.yml](../_config.yml) file.
+
 ## Homepage
 
-Homepage is located in the index.md file in the main directory. It has a couple of properties and content below the `---` section. The content is the text that appears in the `What is #spodari` section.
-
-### Section Titles and Navigation Items
-
-`first-section-title`... `sixth-section-title` - The properties from the first section title to the sixth are the navigation items which are the same as the section titles.
+Homepage is located in the [index.md](../index.md) file in the main directory. It has a couple of properties and content below the `---` section. The content is the text that appears in the `What is #spodari` section.
 
 ### Statistics Metrics
 
@@ -40,8 +40,9 @@ These are the specifics for a certain event, like the location, date, etc. They 
 Properties are:
 * `title`: [Витоша 100] *This is the text that appears at the top of the page in bold letters.*
 * `location`: [Витоша планина] *This is the text that appears below / next to the location icon.*
-* `start-date`: [5 юли 2019] *This is the text that appears below / next to the calendar icon.*
-* `end-date`: [7 юли 2019] *If the event has span onto multiple days.*
+* `start-date`: [2019/07/05] *This is the text that appears below / next to the calendar icon. Should be in the format YYYY/MM/DD - for example 01 February 2019 would be 2019/02/01
+*
+* `end-date`: [2019/07/07] *If the event has span onto multiple days. Should be in the format YYYY/MM/DD - for example 01 February 2019 would be 2019/02/01*
 * `contestants-type`: [IT Crowd only] *This is the text that appears below / next to the person icon.*
 * `layout`: Could be one of [past-event], [upcoming-event], [future-event]. This defines the template that will be used to render the event and the style it will have in the calendar. Templates for past, upcoming and future event slightly differ in their layout.
 * `event-summary`: This is the text that appears in the orange box below the event description.
