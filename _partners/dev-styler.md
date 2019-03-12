@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 2
 name: Dev Styler
 link-to-site: 'https://devstyler.io/'
 ---
