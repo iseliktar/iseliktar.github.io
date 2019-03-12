@@ -4,7 +4,7 @@ first-section-title: 'какво е #spodari'
 second-section-title: какво предстои
 third-section-title: статистика
 fourth-section-title: събития
-fifth-section-title: партньори
+fifth-section-title: приятели
 sixth-section-title: контакти
 donated-sum-number: 10000
 active-minutes-number: 2560
