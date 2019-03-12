@@ -1,7 +1,7 @@
 ---
 title: Renault Morning Run
 location: Борисова градина
-event-date: 10 януари 2019
+start-date: 10 януари 2019
 contestants-type: IT Crowd only
 layout: past-event
 gallery-images-count: 8

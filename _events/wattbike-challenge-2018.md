@@ -1,7 +1,8 @@
 ---
 title: Wattbike Challenge
 location: Java2Days 2018
-event-date: 27-29 ноември 2018
+start-date: 27 ноември 2018
+end-date: 29 ноември 2018
 contestants-type: IT Crowd only
 layout: past-event
 gallery-images-count: 8

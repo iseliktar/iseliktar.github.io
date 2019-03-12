@@ -40,7 +40,8 @@ These are the specifics for a certain event, like the location, date, etc. They 
 Properties are:
 * `title`: [Витоша 100] *This is the text that appears at the top of the page in bold letters.*
 * `location`: [Витоша планина] *This is the text that appears below / next to the location icon.*
-* `date`: [5 юли 2019] *This is the text that appears below / next to the calendar icon.*
+* `start-date`: [5 юли 2019] *This is the text that appears below / next to the calendar icon.*
+* `end-date`: [7 юли 2019] *If the event has span onto multiple days.*
 * `contestants-type`: [IT Crowd only] *This is the text that appears below / next to the person icon.*
 * `layout`: Could be one of [past-event], [upcoming-event], [future-event]. This defines the template that will be used to render the event and the style it will have in the calendar. Templates for past, upcoming and future event slightly differ in their layout.
 * `event-summary`: This is the text that appears in the orange box below the event description.
