@@ -407,10 +407,6 @@ body {
   .partner-image {
     height: 144px;
     width: 144px;
-    -webkit-border-radius: 72px;
-    -moz-border-radius: 72px;
-    border-radius: 72px;
-    background: #D9D9D9;
     margin: 0 auto 20px;
     display: flex;
     flex-direction: column;
@@ -425,37 +421,6 @@ body {
 
 .contact-us {
   max-width: 500px;
-  //.js-float-label-wrapper label {
-  //  font-size: 10px;
-  //  line-height: 12px;
-  //  color: #333;
-  //  position: absolute;
-  //  width: 100%;
-  //  text-align: center;
-  //  top: 10px;
-  //  left: 0;
-  //}
-  //input {
-  //  width: 100%;
-  //  height: 58px;
-  //  border: 2px solid #000;
-  //  margin-bottom: 12px;
-  //  text-align: center;
-  //  font-size: 14px;
-  //  line-height: 16px;
-  //  color: #333;
-  //  padding-top: 0;
-  //}
-  //textarea {
-  //  width: 100%;
-  //  height: 147px;
-  //  max-height: 147px;
-  //  border: 2px solid #000;
-  //  text-align: center;
-  //  font-size: 14px;
-  //  line-height: 16px;
-  //  color: #333;
-  //}
   a {
     font-size: 14px;
     line-height: 52px;
@@ -538,14 +503,17 @@ body {
     -webkit-transform: skewX(-10deg);
     transform: skewX(-10deg);
     max-width: 660px;
-    background: #FF5100;
-    padding: 41px 52px;
+    background-color: #FF5100;
     color: #fff;
     margin: 25px auto 0;
     .content {
+      padding: 41px 52px;
       -ms-transform: skewX(10deg);
       -webkit-transform: skewX(10deg);
       transform: skewX(10deg);
+      background: url("../images/emoticon-awesome.png") no-repeat;
+      background-size: 129px 129px;
+      background-position: 105% 200%;
     }
   }
 }
@@ -809,10 +777,10 @@ body {
     }
   }
   .main-content {
-    background-image: url("../images/background-logo.png"), url("../images/background-hashtag.png");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 1186px 835px, 509px 940px;
-    background-position: top left, 100% 40%;
+    background-image: url("../images/background-logo.png"), url("../images/background-hashtag.png"), url("../images/background-sneaker.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 1186px 835px, 509px 940px, 1096px 480px;
+    background-position: top left, 100% 40%, 0 90%;
   }
   .main-content.single-event {
     background-image: url("../images/background-logo.png");

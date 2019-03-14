@@ -21,6 +21,10 @@ If you want to have a multiline value of a property, you should use the `|` char
 
 Homepage is located in the [index.md](../index.md) file in the main directory. It has a couple of properties and content below the `---` section. The content is the text that appears in the `What is #spodari` section.
 
+### Hero Image
+
+Hero image can be edited when the [team.jpg](../assets/images/team.jpg) image is replaced. The design works best with a panoramic image with primary focus in the center as this is seen in the mobile design.
+
 ### Statistics Metrics
 
 `donated-sum-number`, `active-minutes-number`, `events-number` are the numbers that are shown in the `Statistics` section of the Home page.
