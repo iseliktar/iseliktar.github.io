@@ -520,18 +520,39 @@ body {
 
 .single-event-gallery {
   margin-top: 100px;
-  .row {
-    margin-bottom: 30px;
+  .gallery-image-container {
+    display: inline-block;
+    &:nth-child(n+4) {
+      display: none;
+    }
+    &:nth-child(3n) {
+      position: relative;
+      .more {
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        transition: ease-in 300ms !important;
+        -webkit-transition: ease-in 300ms !important;
+        -moz-transition: ease-in 300ms !important;
+        -ms-transition: ease-in 300ms !important;
+        text-decoration: none;
+      }
+    }
   }
-  .col-md-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  img {
-    max-width: 100%;
-    max-height: 268px;
-    margin: 0 auto;
+  .small-image,
+  .main-image {
+    background-size: cover;
+    background-position: 50% 50%;
     display: block;
   }
 }
@@ -744,8 +765,14 @@ body {
     }
   }
   .single-event-gallery {
-    .col-md-3 {
-      margin-bottom: 20px;
+    .gallery-image-container,
+    .main-image {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto 20px;
+    }
+    .small-image {
+      height: 300px;
     }
   }
   .footer {
@@ -809,8 +836,29 @@ body {
     margin-top: 0;
   }
   .single-event-gallery {
-    .col-md-3 {
-      margin-bottom: 30px;
+    .gallery-image-container {
+      width: 190px;
+      height: 190px;
+      &:nth-child(2n) {
+        margin: 0 20px 20px 20px;
+      }
+    }
+    .gallery-container {
+      width: 610px;
+      margin: 0 auto;
+    }
+    .small-image {
+      margin-bottom: 20px;
+      width: 190px;
+      height: 190px;
+    }
+    .main-image {
+      width: 610px;
+      height: 610px;
+      display: block;
+      margin: 0 auto 20px;
+      background-size: cover;
+      background-position: 50% 50%;
     }
   }
   .statistics {

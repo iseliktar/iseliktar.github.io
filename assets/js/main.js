@@ -1,6 +1,4 @@
 $(function () {
-	// $( '.js-float-label-wrapper').FloatLabel();
-
 	//smooth scroll on click on nav item
 	$('.nav').onePageNav({
 		changeHash: true,
@@ -13,10 +11,8 @@ $(function () {
 		}
 	});
 
-	var navMain = $(".navbar-collapse"); // avoid dependency on #id
-	// "a:not([data-toggle])" - to avoid issues caused
-	// when you have dropdown inside navbar
-	navMain.on("click", "a:not([data-toggle])", null, function () {
+	var navMain = $('.navbar-collapse');
+	navMain.on('click', 'a:not([data-toggle])', null, function () {
 		navMain.collapse('hide');
 	});
 });

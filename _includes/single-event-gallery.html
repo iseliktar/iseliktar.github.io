@@ -4,10 +4,21 @@
 
 <section class="container main-nav-section single-event-gallery">
 	<div class="section-content">
-		<div class="row">
+		<a href="/assets/images/events/{{ file-name }}/main-image.jpg" class="gallery main-image" style="background-image: url('/assets/images/events/{{ file-name }}/main-image.jpg')">
+		</a>
+		<div class="gallery-container row" id="gallery">
 		{% for i in (1..page.gallery-images-count) %}
-			<div class="col-md-3">
-				<img src="/assets/images/events/{{ file-name }}/gallery-image-{{ i }}.jpg" alt="SpoDari Gallery Image">
+			<div class="gallery-image-container">
+				{% if forloop.index == 3 %}
+					<a href="/assets/images/events/{{ file-name }}/gallery-image-{{ i }}.jpg"  style="background-image: url('/assets/images/events/{{ file-name }}/gallery-image-{{ i }}.jpg')" class="small-image">
+					</a>
+					<a class="more gallery" href="/assets/images/events/{{ file-name }}/gallery-image-{{ i }}.jpg">
+						and {{ page.gallery-images-count | minus: 4 }} more
+					</a>
+				{% else %}
+					<a href="/assets/images/events/{{ file-name }}/gallery-image-{{ i }}.jpg"  style="background-image: url('/assets/images/events/{{ file-name }}/gallery-image-{{ i }}.jpg')" class="gallery small-image">
+					</a>
+				{% endif %}
 			</div>
 		{% endfor %}
 		</div>
