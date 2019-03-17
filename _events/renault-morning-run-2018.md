@@ -1,5 +1,6 @@
 ---
 title: Renault Morning Run
+timeline-title: Renault Morning Run
 location: Борисова градина
 start-date: 2018/01/10
 contestants-type: IT Crowd only

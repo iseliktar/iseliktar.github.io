@@ -25,6 +25,8 @@ Homepage is located in the [index.md](../index.md) file in the main directory. I
 
 Hero image can be edited when the [team.jpg](../assets/images/team.jpg) image is replaced. The design works best with a panoramic image with primary focus in the center as this is seen in the mobile design.
 
+One image is used throughout all devices - mobile and desktop. For mobile the image will start cropping from the sides.
+
 ### Statistics Metrics
 
 `donated-sum-number`, `active-minutes-number`, `events-number` are the numbers that are shown in the `Statistics` section of the Home page.
@@ -35,7 +37,7 @@ Calendar is generated, based on the events that have been created.
 
 ## Event 
 
-Create an `.md` document under the `_events` directory. Be mindful of the file name, because the url to access the event page is `{{base_url}}/events/{{name}}`. This means that if you create a file in the `_events` directory and name it `vitosha-100-2019`, the url to access the event page will be `http://spodari.org/events/vitosha-100-2019`. Throughout this document, we will use `vitosha-100-2019` as an example.
+Create an `.md` document under the `_events` directory. The filename must be all small case only. Be mindful of the file name, because the url to access the event page is `{{base_url}}/events/{{name}}`. This means that if you create a file in the `_events` directory and name it `vitosha-100-2019`, the url to access the event page will be `http://spodari.org/events/vitosha-100-2019`. Throughout this document, we will use `vitosha-100-2019` as an example.
 
 ### Event Properties
 
@@ -43,6 +45,7 @@ These are the specifics for a certain event, like the location, date, etc. They 
 
 Properties are:
 * `title`: [Витоша 100] *This is the text that appears at the top of the page in bold letters.*
+* `timeline-title`: [Витоша 100] *This is the text that appears in the timeline.*
 * `location`: [Витоша планина] *This is the text that appears below / next to the location icon.*
 * `start-date`: [2019/07/05] *This is the text that appears below / next to the calendar icon. Should be in the format YYYY/MM/DD - for example 01 February 2019 would be 2019/02/01
 *
