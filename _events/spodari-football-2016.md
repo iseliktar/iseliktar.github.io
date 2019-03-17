@@ -1,5 +1,5 @@
 ---
-title: SpoDari Благотворителен Футболен Турнир
+title: SpoDari Футболен Турнир
 timeline-title: SpoDari Football
 location: RDSPORT
 start-date: 2016/05/29
