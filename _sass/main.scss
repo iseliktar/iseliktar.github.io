@@ -49,7 +49,7 @@ body {
       text-indent: -10000px;
       height: 36px;
       width: 32px;
-      background: url("../images/facebook.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/facebook.svg") no-repeat;
       background-size: contain;
       padding: 0;
     }
@@ -57,7 +57,7 @@ body {
   .navbar-toggler {
     height: 45px;
     width: 42px;
-    background: url("../images/hamburger.png") no-repeat;
+    background: url("../images/sitewide-assets/svg/hamburger.svg") no-repeat;
     background-size: contain;
     margin: 21px 22px 7px 0;
     z-index: 5;
@@ -65,7 +65,7 @@ body {
       height: 28px;
       width: 28px;
       margin: 28px 28px 17px 0;
-      background: url("../images/close.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/close.svg") no-repeat;
       background-size: contain;
     }
     &:focus {
@@ -86,13 +86,13 @@ body {
 .hero-image,
 .no-hero {
   .logo {
-    background: url("../images/logo.svg") no-repeat;
+    background: url("../images/sitewide-assets/svg/logo.svg") no-repeat;
     background-size: contain;
     position: absolute;
     z-index: 5;
   }
   .tagline {
-    background: url("../images/tagline.png") no-repeat;
+    background: url("../images/sitewide-assets/svg/tagline.svg") no-repeat;
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -104,31 +104,31 @@ body {
   &.what-is-next,
   &.single-event-info {
     .header-icon {
-      background: url("../images/flag.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/flag.svg") no-repeat;
       background-size: contain;
     }
   }
   &.statistics {
     .header-icon {
-      background: url("../images/calculator.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/calculator.svg") no-repeat;
       background-size: contain;
     }
   }
   &.calendar {
     .header-icon {
-      background: url("../images/calendar.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/calendar.svg") no-repeat;
       background-size: contain;
     }
   }
   &.partners {
     .header-icon {
-      background: url("../images/thumbs-up.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/thumbs-up.svg") no-repeat;
       background-size: contain;
     }
   }
   &.contact-us {
     .header-icon {
-      background: url("../images/envelope.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/envelope.svg") no-repeat;
       background-size: contain;
     }
   }
@@ -140,7 +140,7 @@ body {
       display: block;
       height: 15px;
       width: 51px;
-      background: url("../images/separator.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/separator.svg") no-repeat;
       background-size: contain;
       content: "";
       text-align: center;
@@ -169,11 +169,16 @@ body {
 .what-is-next {
   width: 375px;
   .section-content {
-    background: url("../images/orange-text-bg-top.png"), url("../images/orange-text-bg.png");
+    background: url("../images/sitewide-assets/svg/orange-text-bg.svg"), url("../images/sitewide-assets/svg/orange-text-bg.svg");
     background-position: top center, 50% 100%;
     background-repeat: no-repeat, no-repeat;
     background-size: 90%, 90%;
     padding: 20px 0 80px;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   img {
     width: 100%;
@@ -215,19 +220,19 @@ body {
   }
   .money {
     .icon {
-      background: url("../images/stats-bill.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/stats-bill.svg") no-repeat;
       background-size: contain;
     }
   }
   .minutes {
     .icon {
-      background: url("../images/stats-chronometer.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/stats-chronometer.svg") no-repeat;
       background-size: contain;
     }
   }
   .events {
     .icon {
-      background: url("../images/stats-flag.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/stats-flag.svg") no-repeat;
       background-size: contain;
     }
   }
@@ -385,7 +390,7 @@ body {
       height: 26px;
       width: 26px;
       margin: 0 auto;
-      background: url("../images/future-event.png") no-repeat center center;
+      background: url("../images/sitewide-images/svg/future-event.svg") no-repeat center center;
       background-size: contain;
     }
   }
@@ -435,7 +440,7 @@ body {
   .facebook-icon {
     height: 36px;
     width: 32px;
-    background: url("../images/facebook.png") no-repeat;
+    background: url("../images/sitewide-assets/svg/facebook.svg") no-repeat;
     background-size: contain;
     padding: 0;
     margin: 0 auto;
@@ -465,7 +470,7 @@ body {
     .icon {
       height: 26px;
       width: 18px;
-      background: url("../images/location-pin.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/location-pin.svg") no-repeat;
       background-size: contain;
     }
   }
@@ -473,7 +478,7 @@ body {
     .icon {
       width: 20px;
       height: 18px;
-      background: url("../images/calendar-single-event.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/calendar-single-event.svg") no-repeat;
       background-size: contain;
     }
   }
@@ -481,7 +486,7 @@ body {
     .icon {
       width: 22px;
       height: 21px;
-      background: url("../images/person.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/person.svg") no-repeat;
       background-size: contain;
     }
   }
@@ -511,7 +516,7 @@ body {
       -ms-transform: skewX(10deg);
       -webkit-transform: skewX(10deg);
       transform: skewX(10deg);
-      background: url("../images/emoticon-awesome.png") no-repeat;
+      background: url("../images/sitewide-assets/svg/emoticon-awesome.svg") no-repeat;
       background-size: 129px 129px;
       background-position: 105% 200%;
     }
@@ -587,9 +592,9 @@ body {
 
 .footer {
   height: 260px;
-  background: url("../images/hash.png") no-repeat;
-  background-position: 80% 100%;
-  background-size: 158px 164px;
+  background: url("../images/sitewide-assets/svg/hash.svg") no-repeat;
+  background-position: 80% -50%;
+  background-size: 176px 331px;
   text-align: center;
   font-size: 14px;
   line-height: 22px;
@@ -624,7 +629,7 @@ body {
       top: 0;
       z-index: 3;
       transition: left 0.35s ease;
-      background: url("../images/menu-orange-bg.png");
+      background: url("../images/sitewide-assets/svg/menu-orange-bg.svg");
       background-position: left bottom;
       background-size: cover;
 
@@ -712,7 +717,7 @@ body {
     }
   }
   .what-is-spodari {
-    background: url("../images/white-bg.png") no-repeat;
+    background: url("../images/sitewide-assets/svg/white-bg.svg") no-repeat;
     background-size: cover;
     background-position: 50% 0;
     margin-top: -170px;
@@ -804,13 +809,13 @@ body {
     }
   }
   .main-content {
-    background-image: url("../images/background-logo.png"), url("../images/background-hashtag.png"), url("../images/background-sneaker.png");
+    background-image: url("../images/sitewide-assets/svg/background-logo.svg"), url("../images/sitewide-assets/svg/background-hashtag.svg"), url("../images/sitewide-assets/svg/background-sneaker.svg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 1186px 835px, 509px 940px, 1096px 480px;
     background-position: top left, 100% 40%, 0 90%;
   }
   .main-content.single-event {
-    background-image: url("../images/background-logo.png");
+    background-image: url("../images/sitewide-assets/svg/background-logo.svg");
     background-repeat: no-repeat;
     background-size: 1186px 835px;
     background-position: top left;
