@@ -5,7 +5,8 @@ location: Sofia Karting Ring
 start-date: 2019/04/17
 contestants-type: 100
 sport-type: karting
-layout: future-event
+layout: upcoming-event
+highlighted: true
 gallery-images-count: 1
 event-summary: Картинг с кауза
 ---

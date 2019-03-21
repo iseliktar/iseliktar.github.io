@@ -1,15 +1,63 @@
+{% assign upcoming-events = site.events | where:"layout", "upcoming-event" %}
+{% assign highlighted-upcoming-event-array = upcoming-events | where:"highlighted", "true" %}
+{% assign highlighted-upcoming-event = highlighted-upcoming-event-array.first %}
+
+{% assign file-path-array = highlighted-upcoming-event.path | split: "/" %}
+{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
+{% assign file-name = file-path-name-and-extension-array.first %}
+
 <section class="container main-nav-section what-is-next" id="what-is-next">
 	<h1>
 		<div class="header-icon"></div>
 		{{ site.second-section-title }}
 	</h1>
 	<div class="section-content">
-		<section class="event-info">
-			<img src="./assets/images/event-poster.png" alt="Carting event poster">
-			<div>
-				<p class="event-name">Картинг за IT компании</p>
-				<p class="event-date">5 април 2019</p>
-			</div>
-		</section>
+		<a href="/events/{{ file-name }}">
+			<section class="event-info">
+				<img src="/assets/images/events/{{ file-name }}/event-poster.png" alt="Highlighted upcoming event poster">
+				<div>
+					<p class="event-name">{{ highlighted-upcoming-event.title }}</p>
+					<p class="event-date">
+						{% assign m = highlighted-upcoming-event.start-date | date: "%-m" %}
+						{{ highlighted-upcoming-event.start-date | date: "%-d" }}
+						{% case m %}
+							{% when '1' %}януари
+							{% when '2' %}февруари
+							{% when '3' %}март
+							{% when '4' %}април
+							{% when '5' %}май
+							{% when '6' %}юни
+							{% when '7' %}юли
+							{% when '8' %}август
+							{% when '9' %}септември
+							{% when '10' %}октомври
+							{% when '11' %}ноември
+							{% when '12' %}декември
+						{% endcase %}
+						{{ highlighted-upcoming-event.start-date | date: "%Y" }}
+						{% if highlighted-upcoming-event.end-date %}
+							<span>-</span>
+							{% assign m = highlighted-upcoming-event.end-date | date: "%-m" %}
+							{{ highlighted-upcoming-event.end-date | date: "%-d" }}
+							{% case m %}
+								{% when '1' %}януари
+								{% when '2' %}февруари
+								{% when '3' %}март
+								{% when '4' %}април
+								{% when '5' %}май
+								{% when '6' %}юни
+								{% when '7' %}юли
+								{% when '8' %}август
+								{% when '9' %}септември
+								{% when '10' %}октомври
+								{% when '11' %}ноември
+								{% when '12' %}декември
+							{% endcase %}
+							{{ highlighted-upcoming-event.end-date | date: "%Y" }}
+						{% endif %}
+					</p>
+				</div>
+			</section>
+		</a>
 	</div>
 </section>
