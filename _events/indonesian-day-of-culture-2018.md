@@ -1,5 +1,6 @@
 ---
-title: Indonesian Culture Day
+title: Ден на Индонезийската култура
+timeline-title: Indonesian Culture Day
 location: Сдружение за Деца с Онкохематологични Заболявания
 start-date: 2018/03/08
 end-date: 2018/03/08
