@@ -1,5 +1,6 @@
 ---
-title: Wattbike Challenge
+title: Wattbike те предизвиква
+timeline-title: Wattbike Challenge
 location: Java2Days 2018
 start-date: 2018/11/27
 end-date: 2018/11/29
