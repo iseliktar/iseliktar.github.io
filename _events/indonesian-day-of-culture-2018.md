@@ -4,7 +4,7 @@ timeline-title: Indonesian Culture Day
 location: Сдружение за Деца с Онкохематологични Заболявания
 start-date: 2018/03/08
 end-date: 2018/03/08
-contestants-type: Dance
+sport-type: Dance
 layout: past-event
 gallery-images-count: 5
 event-summary: 'Това събитие се проведе в сътрудничество с инициативата SpoDari и целта му бе да донесе повече светлина, цветове, щастие и да представи индонезийската култура, до която децата никога не са имали досег.' 

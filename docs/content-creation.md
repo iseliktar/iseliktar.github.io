@@ -27,6 +27,8 @@ Hero image can be edited when the [team.jpg](../assets/images/team.jpg) image is
 
 One image is used throughout all devices - mobile and desktop. For mobile the image will start cropping from the sides.
 
+### Highlighted upcoming event - read in the event section
+
 ### Statistics Metrics
 
 `donated-sum-number`, `active-minutes-number`, `events-number` are the numbers that are shown in the `Statistics` section of the Home page.
@@ -50,10 +52,12 @@ Properties are:
 * `start-date`: [2019/07/05] *This is the text that appears below / next to the calendar icon. Should be in the format YYYY/MM/DD - for example 01 February 2019 would be 2019/02/01
 *
 * `end-date`: [2019/07/07] *If the event has span onto multiple days. Should be in the format YYYY/MM/DD - for example 01 February 2019 would be 2019/02/01*
-* `contestants-type`: [IT Crowd only] *This is the text that appears below / next to the person icon.*
+* `contestants-count`: [100+ Enthusiasts] *This is the text that appears below / next to the person icon.*
+* `sport-type`: [Cycling] *This is the text that appears below / next to the sneaker icon.*
 * `layout`: Could be one of [past-event], [upcoming-event], [future-event]. This defines the template that will be used to render the event and the style it will have in the calendar. Templates for past, upcoming and future event slightly differ in their layout.
 * `event-summary`: This is the text that appears in the orange box below the event description.
 * `gallery-count`: [8] This is the number of images that you have put in the gallery for this event. How to put the images in the gallery will be explained in the next section.
+* `highlighted`: [true] This applies only if the type of the layout is `upcoming-event` and signifies that this event poster, title and date will appear on the Homepage. There could be only one highlighted upcoming event.
 * Below the `---` section, enter the description of the event.
 
 ### Event Images

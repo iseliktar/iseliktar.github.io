@@ -3,7 +3,7 @@ title: Renault Morning Run
 timeline-title: Renault Morning Run
 location: Борисова градина
 start-date: 2018/01/10
-contestants-type: IT Crowd only
+sport-type: IT Crowd only
 layout: past-event
 gallery-images-count: 8
 event-summary: В тази мисия се включиха 53 участника от 7 компании. С общи усилия събрахме 2400 лв., които ще бъдат дарени на сдружение "Деца с онкохематологични заболявания". Благодарим ви за участието

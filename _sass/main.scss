@@ -454,7 +454,7 @@ body {
 }
 
 .single-event-info {
-  .col-md-4 {
+  .col-md-3 {
     font-size: 14px;
     line-height: 22px;
     font-weight: bold;
@@ -482,11 +482,19 @@ body {
       background-size: contain;
     }
   }
-  .contestants-type {
+  .contestants-count {
     .icon {
       width: 22px;
       height: 21px;
       background: url("../images/sitewide-assets/svg/person.svg") no-repeat;
+      background-size: contain;
+    }
+  }
+  .sport-type {
+    .icon {
+      width: 30px;
+      height: 18px;
+      background: url("../images/sitewide-assets/svg/orange-sneaker.svg") no-repeat;
       background-size: contain;
     }
   }
@@ -518,7 +526,7 @@ body {
       transform: skewX(10deg);
       background: url("../images/sitewide-assets/svg/emoticon-awesome.svg") no-repeat;
       background-size: 129px 129px;
-      background-position: 105% 200%;
+      background-position: 105% 120%;
     }
   }
 }
@@ -701,9 +709,10 @@ body {
       display: inline-block;
       vertical-align: middle;
       margin-right: 20px;
+      width: 30px;
     }
     .row {
-      max-width: 300px;
+      max-width: 320px;
       margin: 0 auto;
     }
     .name {
@@ -711,7 +720,7 @@ body {
       vertical-align: middle;
       font-weight: normal;
     }
-    .col-md-4 {
+    .col-md-3 {
       text-align: left;
       margin-bottom: 30px;
     }

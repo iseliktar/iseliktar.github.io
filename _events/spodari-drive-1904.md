@@ -3,7 +3,7 @@ title: SpoDari DRIVE
 timeline-title: Благотворителен Картинг Турнир
 location: Sofia Karting Ring
 start-date: 2019/04/17
-contestants-type: 100
+contestants-count: 100
 sport-type: karting
 layout: upcoming-event
 highlighted: true
