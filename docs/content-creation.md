@@ -89,5 +89,5 @@ Create an `.md` document under the `_partners` directory. Throughout this docume
 
 ### Logo 
 
-This is the logo that is shown in the grey circle in the `Partners` section. Its path should be `assets/images/partners/{{partner-filename}}.png`, where {{partner-filename}} is the name of the `md` file that is created with the partner information. In the Tumba Solutions example, the logo path should be `assets/images/partners/tumba-solutions.png`
+This is the logo that is shown in the grey circle in the `Partners` section. Its path should be `assets/images/partners/{{partner-filename}}.png`, where {{partner-filename}} is the name of the `md` file that is created with the partner information. In the Tumba Solutions example, the logo path should be `assets/images/partners/tumba-solutions.png` 
 
