@@ -18,7 +18,7 @@
 					{% assign file-path-array = event.path | split: "/" %}
 					{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
 					{% assign file-name = file-path-name-and-extension-array.first %}
-					<a href="/events/{{ file-name }}" class="{{ event.layout }} event">
+					<a href="{{site.url}}{{site.baseurl}}/events/{{ file-name }}" class="{{ event.layout }} event">
 						<div class="date">
 							{% assign m = event.start-date | date: "%-m" %}
 							{{ event.start-date | date: "%-d" }}
@@ -63,7 +63,7 @@
 		{% assign file-path-array = event.path | split: "/" %}
 		{% assign file-path-name-and-extension-array = file-path-array.last | split: "." %}
 		{% assign file-name = file-path-name-and-extension-array.first %}
-		<a href="/events/{{ file-name }}" class="{{ event.layout }} event">
+		<a href="{{site.url}}{{site.baseurl}}/events/{{ file-name }}" class="{{ event.layout }} event">
 			<div class="row">
 				<div class="date col-6">
 					<div>
