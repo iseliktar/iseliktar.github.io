@@ -34,7 +34,7 @@ collections:
     output: true
 
 
-baseurl: /spodari-web
+#baseurl: /spodari-web
 
 
 
